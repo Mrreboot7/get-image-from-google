@@ -1,4 +1,5 @@
 tag:
+	docker tag gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:b2c482eaf34e606595419f6bc562c2f3c83827a39cbbe2aadbf229316d3a07c4 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-queue:v0.15.3
 	docker tag gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:fc9b6d008e23336fd69a4662d0fbe3dcfc6ce42dfa3fa16f2b6b4b51486074e3 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-autoscaler:v0.15.3
 	docker tag gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler-hpa@sha256:e58e776735f589766457016d89d1b47bb0e6e95d2415cb7b81337301e6d04586 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-autoscaler-hpa:v0.15.3
 	docker tag gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:fc64b15b5e24977c818269207a958cb9b0f32fc089135909b5ea4f2f6b24efbd registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-activator:v0.15.3
@@ -14,6 +15,7 @@ tag:
 	docker tag gcr.io/kfserving/alibi-explainer:0.2.2 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:0.2.2
 	docker tag gcr.io/kfserving/logger:0.2.2 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:0.2.2
 push:
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-queue:v0.15.3
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-autoscaler:v0.15.3
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-autoscaler-hpa:v0.15.3
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-activator:v0.15.3
@@ -29,6 +31,7 @@ push:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:0.2.2
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:0.2.2
 pull:
+	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:b2c482eaf34e606595419f6bc562c2f3c83827a39cbbe2aadbf229316d3a07c4
 	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:fc9b6d008e23336fd69a4662d0fbe3dcfc6ce42dfa3fa16f2b6b4b51486074e3
 	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler-hpa@sha256:e58e776735f589766457016d89d1b47bb0e6e95d2415cb7b81337301e6d04586
 	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:fc64b15b5e24977c818269207a958cb9b0f32fc089135909b5ea4f2f6b24efbd
