@@ -15,6 +15,7 @@ tag:
 	docker tag gcr.io/kfserving/alibi-explainer:0.2.2 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:0.2.2
 	docker tag gcr.io/kfserving/logger:0.2.2 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:0.2.2
 	docker tag gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
+	docker tag gcr.io/kubeflow-examples/mnist/web-ui:v20190112-v0.2-142-g3b38225 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/mnist-web-ui:v20190112-v0.2-142-g3b38225
 push:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-queue:v0.15.3
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/knative-autoscaler:v0.15.3
@@ -32,6 +33,7 @@ push:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:0.2.2
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:0.2.2
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/mnist-web-ui:v20190112-v0.2-142-g3b38225
 pull:
 	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:b2c482eaf34e606595419f6bc562c2f3c83827a39cbbe2aadbf229316d3a07c4
 	docker pull gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:fc9b6d008e23336fd69a4662d0fbe3dcfc6ce42dfa3fa16f2b6b4b51486074e3
@@ -49,3 +51,4 @@ pull:
 	docker pull gcr.io/kfserving/alibi-explainer:0.2.2
 	docker pull gcr.io/kfserving/logger:0.2.2
 	docker pull gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a
+	docker pull gcr.io/kubeflow-examples/mnist/web-ui:v20190112-v0.2-142-g3b38225
