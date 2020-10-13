@@ -30,9 +30,9 @@ pullknative:
 tagkfserving:
 	docker tag gcr.io/kfserving/storage-initializer:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.0
 	docker tag mcr.microsoft.com/onnxruntime/server:v0.5.1 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/onnxruntime-server:v0.5.1
-	docker tag gcr.io/kfserving/sklearnserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserverv:v0.4.0
+	docker tag gcr.io/kfserving/sklearnserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
 	docker tag gcr.io/kfserving/xgbserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
-	docker tag gcr.io/kfserving/pytorchserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-pytorchserverv:v0.4.0
+	docker tag gcr.io/kfserving/pytorchserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-pytorchserver:v0.4.0
 	docker tag nvcr.io/nvidia/tensorrtserver:19.05-py3 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tensorrtserver:19.05-py3
 	docker tag gcr.io/kfserving/alibi-explainer:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:v0.4.0
 	docker tag gcr.io/kfserving/logger:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:v0.4.0
