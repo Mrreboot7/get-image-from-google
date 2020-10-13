@@ -7,10 +7,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Pull images
-        run: make pull
+        run: make pullknative
       - name: Login registry
         run: docker login --username=${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_REGISTRY }} -p ${{ secrets.DOCKER_PASSWORD }}
       - name: Tag images
-        run: make tag
+        run: make tagknative
       - name: Push images
-        run: make push
+        run: make pushknative
