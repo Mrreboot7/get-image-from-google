@@ -33,7 +33,7 @@ tagkfserving:
 	docker tag gcr.io/kfserving/sklearnserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
 	docker tag gcr.io/kfserving/xgbserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
 	docker tag gcr.io/kfserving/pytorchserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-pytorchserver:v0.4.0
-	docker tag nvcr.io/nvidia/tensorrtserver:20.08-py3 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tensorrtserver:20.08-py3
+	docker tag nvcr.io/nvidia/tritonserver:20.08-py3 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tritonserver:20.08-py3
 	docker tag gcr.io/kfserving/alibi-explainer:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:v0.4.0
 	docker tag gcr.io/kfserving/logger:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:v0.4.0
 	docker tag gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
@@ -46,7 +46,7 @@ pushkfserving:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-pytorchserver:v0.4.0
-	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tensorrtserver:20.08-py3
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tritonserver:20.08-py3
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:v0.4.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:v0.4.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
@@ -59,7 +59,7 @@ pullkfserving:
 	docker pull gcr.io/kfserving/sklearnserver:v0.4.0
 	docker pull gcr.io/kfserving/xgbserver:v0.4.0
 	docker pull gcr.io/kfserving/pytorchserver:v0.4.0
-	docker pull nvcr.io/nvidia/tensorrtserver:20.08-py3
+	docker pull nvcr.io/nvidia/tritonserver:20.08-py3
 	docker pull gcr.io/kfserving/alibi-explainer:v0.4.0
 	docker pull gcr.io/kfserving/logger:v0.4.0
 	docker pull gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a
