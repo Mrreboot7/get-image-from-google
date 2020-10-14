@@ -39,6 +39,7 @@ tagkfserving:
 	docker tag gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
 	docker tag gcr.io/kubeflow-examples/mnist/web-ui:v20190112-v0.2-142-g3b38225 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/mnist-web-ui:v20190112-v0.2-142-g3b38225
 	docker tag gcr.io/kfserving/kfserving-controller:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-controller:v0.4.0
+	docker tag gcr.io/kfserving/batcher:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-batcher:v0.4.0
 
 pushkfserving:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.0
@@ -52,6 +53,7 @@ pushkfserving:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/mnist-web-ui:v20190112-v0.2-142-g3b38225
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-controller:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-batcher:v0.4.0
 
 pullkfserving:
 	docker pull gcr.io/kfserving/storage-initializer:v0.4.0
@@ -65,3 +67,4 @@ pullkfserving:
 	docker pull gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a
 	docker pull gcr.io/kubeflow-examples/mnist/web-ui:v20190112-v0.2-142-g3b38225
 	docker pull gcr.io/kfserving/kfserving-controller:v0.4.0
+	docker pull gcr.io/kfserving/batcher:v0.4.0
