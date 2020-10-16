@@ -65,3 +65,41 @@ pullkfserving:
 	docker pull gcr.io/kaniko-project/executor@sha256:e36c9fa99279217c4bb8ee172819b441c3ca8ef946dc0e28b21721eefb2ba70a
 	docker pull gcr.io/kubeflow-examples/mnist/web-ui:v20190112-v0.2-142-g3b38225
 	docker pull gcr.io/kfserving/kfserving-controller:latest
+
+# kubeflow
+tagkubeflow:
+	docker tag gcr.io/istio-release/node-agent-k8s:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-node-agent-k8s:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/kubectl:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-kubectl:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/sidecar_injector:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-sidecar_injector:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/mixer:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-mixer:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/proxyv2:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-proxyv2:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/mixer:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-mixer:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/pilot:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-pilot:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/citadel:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-citadel:release-1.3-latest-daily
+	docker tag gcr.io/istio-release/galley:release-1.3-latest-daily registry.cn-shenzhen.aliyuncs.com/aaskubeflow/istio-galley:release-1.3-latest-daily
+	docker tag gcr.io/kubeflow-images-public/kubernetes-sigs/application:1.0-beta registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kubeflow-images-public-kubernetes-sigs-application:1.0-beta
+
+pushkubeflow:
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/onnxruntime-server:v1.0.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-pytorchserver:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/nvidia-tritonserver:20.08-py3
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-alibi-explainer:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-logger:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kaniko-project-executor:v1.0.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/mnist-web-ui:v20190112-v0.2-142-g3b38225
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-controller:latest
+
+pullkubeflow:
+	docker pull gcr.io/istio-release/node-agent-k8s:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/kubectl:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/sidecar_injector:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/mixer:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/proxyv2:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/mixer:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/pilot:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/citadel:release-1.3-latest-daily
+	docker pull gcr.io/istio-release/galley:release-1.3-latest-daily
+	docker pull gcr.io/kubeflow-images-public/kubernetes-sigs/application:1.0-beta
