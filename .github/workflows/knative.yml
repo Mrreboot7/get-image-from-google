@@ -2,7 +2,7 @@ name: Docker Publish CI visual_relation
 on: [push]
 
 jobs:
-  push:
+  knative:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2

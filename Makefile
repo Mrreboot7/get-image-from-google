@@ -28,7 +28,7 @@ pullknative:
 
 # kfserving
 tagkfserving:
-	docker tag gcr.io/kfserving/storage-initializer:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.0
+	docker tag gcr.io/kfserving/storage-initializer:v0.4.1 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.1
 	docker tag mcr.microsoft.com/onnxruntime/server:v1.0.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/onnxruntime-server:v1.0.0
 	docker tag gcr.io/kfserving/sklearnserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
 	docker tag gcr.io/kfserving/xgbserver:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
@@ -41,7 +41,7 @@ tagkfserving:
 	docker tag gcr.io/kfserving/kfserving-controller:v0.4.0 registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-controller:v0.4.0
 
 pushkfserving:
-	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.0
+	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-storage-initializer:v0.4.1
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/onnxruntime-server:v1.0.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-sklearnserver:v0.4.0
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-xgbserver:v0.4.0
@@ -54,7 +54,7 @@ pushkfserving:
 	docker push registry.cn-shenzhen.aliyuncs.com/aaskubeflow/kfserving-controller:v0.4.0
 
 pullkfserving:
-	docker pull gcr.io/kfserving/storage-initializer:v0.4.0
+	docker pull gcr.io/kfserving/storage-initializer:v0.4.1
 	docker pull mcr.microsoft.com/onnxruntime/server:v1.0.0
 	docker pull gcr.io/kfserving/sklearnserver:v0.4.0
 	docker pull gcr.io/kfserving/xgbserver:v0.4.0
