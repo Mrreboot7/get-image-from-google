@@ -99,3 +99,12 @@ pullkubeflow:
 	docker pull gcr.io/istio-release/citadel:release-1.3-latest-daily
 	docker pull gcr.io/istio-release/galley:release-1.3-latest-daily
 	docker pull gcr.io/kubeflow-images-public/kubernetes-sigs/application:1.0-beta
+
+pullk8s:
+	docker pull k8s.gcr.io/sig-storage/local-volume-provisioner:v2.4.0
+
+tagk8s:
+	docker tag k8s.gcr.io/sig-storage/local-volume-provisioner:v2.4.0 registry.cn-shenzhen.aliyuncs.com/aas-common/local-volume-provisioner:v2.4.0
+
+pushk8s:
+	docker push registry.cn-shenzhen.aliyuncs.com/aas-common/local-volume-provisioner:v2.4.0
