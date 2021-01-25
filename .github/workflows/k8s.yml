@@ -1,0 +1,16 @@
+name: Docker Publish CI visual_relation
+on: [push]
+
+jobs:
+  k8s:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Pull images
+        run: make pullk8s
+      - name: Login registry
+        run: docker login --username=${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_REGISTRY }} -p ${{ secrets.DOCKER_PASSWORD }}
+      - name: Tag images
+        run: make tagk8s
+      - name: Push images
+        run: make pushk8s
